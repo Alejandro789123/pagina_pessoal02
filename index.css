@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+}
+/*-- Cabeçalho --*/
+
+body{
+   color: black;
+   background-image: linear-gradient(to bottom,cyan, rgb(237, 237, 105));
+   font-family: 'MuseoModerno', cursive; 
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+}
+
+nav a:hover{
+    color: #5BBE42;
+   
+    
+}
+
+nav{
+    padding: 0%;
+    color: white;
+    background-color: #080833; 
+    width: 100%;
+    position:sticky;
+}
+
+.cabecalho img{
+    width: 100px;
+    height: 48px;
+    float: left;
+    border-top: 50%;
+    border: 1px solid rgb(225, 10, 10);
+    margin: 0 500px 0 0;
+    /* margin-top: 15px; */
+    
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    padding: 20px;
+   
+
+}
+
+a{
+color: white;
+text-decoration: none;
+margin: 0 20px 0 0;
+font-size: 18px;
+}
+
+header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #4Ce64c;
+}
+.center {
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+h1{
+    color: #5bbe42 ;
+    /* margin: 2%; */
+    text-align: center;
+}
+
+@keyframes transicao {
+    0%   {color: #4Ce64c;}
+    50%  {color: white;}
+    100% {color: #4Ce64c;}
+  }
+.animacao{
+    animation-name: transicao;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#projetos{
+    height: 100vh;
+}
+
+#projetos h1{
+    margin-bottom: 70px;
+}
+
+main{
+    margin: 10px 100px 0 100px;
+    text-align: center;
+
+}
+
+main p{
+color: rgb(43, 138, 21);
+}
+
+main h1{
+    color: rgb(28, 63, 20);
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+/*inicio card*/
+.flip-card{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: vh;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 23%;
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card img{
+    width: 100%;
+    box-shadow: 2px 10px 30px rgb(28, 63, 20);
+    margin: 0 10px 0 0;
+}
+
+.flip-card-inner:hover {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+/* fim inicio card*/
+  
+/*tabela*/
+table { 
+    width:100%;
+    margin:0 auto;
+    margin-bottom: 5%;
+    border-spacing:0;
+    border-right:1px solid rgb(0, 0, 0);
+    border-bottom:1px solid rgb(1, 1, 1);
+}
+ 
+caption {
+    font-size:130%;
+    font-weight:bold;
+    padding:5px 0;
+    background-color:#ECECEC;
+    border:1px solid rgb(10, 10, 10);
+    border-bottom:none;
+}
+ 
+tr, td, th {
+    border:thin solid rgb(10, 10, 10);
+    border-bottom:none;
+    border-right:none;
+    padding:5px;
+}
+ 
+td { 
+    text-align:center;
+}
+/*tabela*/
+
+/*footer*/
+footer img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0 0;
+
+}
+.logo{
+    margin: 0 600px 0 0;
+}
+footer{
+    padding: 0%;
+    color: white;
+    background-color: #0c1220; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer audio{
+    margin-left: 50px;
+    width: 10%;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+
+ footer a{
+     text-align: center;
+     margin: 0 20px 0 px;
+ }
+ 
+
+.conteiner{
+    margin: 0%;
+}
+    .botton{
+    margin: 20px 0 0 0 ;
+    background-color: #36e639;
+}
+
+.botton h2{
+     text-align: justify;
+    margin: 5px 0 5px 0 ;
+}
+   
+   .botton::after {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(45deg, cyan, yellow);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .botton:hover {
+    color: var(--btn-color);
+    background-image: linear-gradient(45deg, cyan, yellow);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .botton:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+   audio{
+       width: 1opx;
+      
+     }
+
+
+
+
+
+

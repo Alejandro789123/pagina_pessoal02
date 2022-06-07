@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, cyan, yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contato{
+    background-color: rgba(0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 30px;
+    color: white;
+    width: 100%;
+    max-width: 512px;
+    font-size: 18px;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 32px;
+    text-align: center;
+
+}
+
+.contato textarea,
+.contato input,
+.contato textarea,
+.contato button{
+   display: block;
+   width: 100%;
+
+  
+
+}
+
+.contato textarea,
+.contato input{
+    font: inherit;
+    margin-bottom: 1rem;
+    border: 1px;
+    border-radius: 15px;
+    transition: border-color,
+    box-shadow 0.2s;
+
+}
+.contato textarea{
+    min-height: 13rem;
+    resize: vertical;
+
+}
+
+.contato textarea:hover,
+.contato textarea:focus,
+.contato input:hover,
+.contato input:focus{
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dcaff;
+
+}
+
+.contato button{
+    display: block;
+    padding: 1rem;
+    background-color: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.contato button:hover,
+.contato button::focus{
+    outline: none;
+    background: #09d;
+}
+
+
